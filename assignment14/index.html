@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="ur">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CALCULATOR</title>
+  <link rel="stylesheet" href="style.css">
+  
+</head>
+<body>
+  <div class="calculator">
+  <!-- <h1 style="font-style: italic; font-size: 50px;">CALCULATOR</h1>
+    <h2>CITIZEN / CT-9914D <br> CHECK & CORRECT CALCULATOR</h2> -->
+    <h1> Calculator Design</h1>
+    <input type="text" id="display" readonly style="width: 332px; padding: 15px; font-size: 50px; ">
+<br>
+    <br>
+
+<div class="cal">
+    <button type="button" value="(" onclick="appendToDisplay('(')" style="background-color: rgb(36, 33, 33); color: white;">si</button>    
+    <button type="button" value=")" onclick="appendToDisplay(')')" style="background-color: rgb(36, 33, 33); color: white;">co</button>    
+    <button type="button" value="%" onclick="appendToDisplay('%')" style="background-color: rgb(36, 33, 33); color: white;">ta</button>    
+    <button type="button" value="÷" onclick="appendToDisplay('/')"style="background-color: rgb(246, 246, 3);">rlc</button>
+  
+   
+     <br>
+    <button type="button" value="(" onclick="appendToDisplay('(')" style="background-color: rgb(36, 33, 33); color: white;">en</button>    
+    <button type="button" value=")" onclick="appendToDisplay(')')" style="background-color: rgb(36, 33, 33); color: white;">m+</button>    
+    <button type="button" value="%" onclick="appendToDisplay('%')" style="background-color: rgb(36, 33, 33); color: white;">m-</button>    
+    <button type="button" value="÷" onclick="appendToDisplay('/')"style="background-color: rgb(246, 246, 3);">sh</button>
+  
+     <br>
+    <button type="button" value="(" onclick="appendToDisplay('(')" style="background-color: rgb(36, 33, 33); color: white;">(</button>    
+    <button type="button" value=")" onclick="appendToDisplay(')')" style="background-color: rgb(36, 33, 33); color: white;">)</button>    
+    <button type="button" value="%" onclick="appendToDisplay('%')" style="background-color: rgb(36, 33, 33); color: white;">%</button>    
+    <button type="button" value="÷" onclick="appendToDisplay('/')"style="background-color: rgb(246, 246, 3);">÷</button>
+     
+    
+    <br>
+
+    <button type="button" value="7" onclick="appendToDisplay('7')" style="background-color: rgb(36, 33, 33); color: white;">7</button>    
+    <button type="button" value="8" onclick="appendToDisplay('8')" style="background-color: rgb(36, 33, 33); color: white;">8</button>
+    <button type="button" value="9" onclick="appendToDisplay('9')" style="background-color: rgb(36, 33, 33); color: white;">9</button>
+    <button type="button" value="*" onclick="appendToDisplay('*')"style="background-color: rgb(246, 246, 3);">*</button>
+    
+    <br>
+  
+    <button type="button" value="4" onclick="appendToDisplay('4')" style="background-color: rgb(36, 33, 33); color: white;">4</button>
+    <button type="button" value="5" onclick="appendToDisplay('5')" style="background-color: rgb(36, 33, 33); color: white;">5</button>
+    <button type="button" value="6" onclick="appendToDisplay('6')" style="background-color: rgb(36, 33, 33); color: white;">6</button>
+    <button type="button" value="-" onclick="appendToDisplay('-')"style="background-color: rgb(246, 246, 3);">-</button>
+    
+    
+    <br>
+    <button type="button" value="1" onclick="appendToDisplay('1')" style="background-color: rgb(36, 33, 33);color: white;">1</button>
+    <button type="button" value="2" onclick="appendToDisplay('2')" style="background-color: rgb(36, 33, 33); color: white;">2</button>
+    <button type="button" value="3" onclick="appendToDisplay('3')" style="background-color: rgb(36, 33, 33); color: white;">3</button>
+    <button type="button" value="+" onclick="appendToDisplay('+')" style="background-color: rgb(246, 246, 3);">+</button>
+    
+    <br>
+    <button type="button" value="C" onclick="clearDisplay()" style="background-color: rgb(246, 246, 3);">C</button>
+
+    <button type="button" value="0" onclick="appendToDisplay('0')" style="background-color: rgb(246, 246, 3);">0</button>
+    
+    <button type="button" value="." onclick="appendToDisplay('.')" style="background-color: rgb(246, 246, 3);">.</button>
+    <button type="button" value="=" onclick="calculate()" style="background-color: rgb(246, 246, 3);">=</button>
+     
+    <h1 style="font-size: 20px;">MADE BY : MOHSIN RAZA ABID</h1>
+</div>
+</div>
+
+  <script>
+    function appendToDisplay(value) {
+      document.getElementById('display').value += value;
+    }
+    
+    function clearDisplay() {
+      document.getElementById('display').value = '';
+    }
+    
+    function calculate() {
+      var display = document.getElementById('display');
+      var result = eval(display.value);
+      display.value = result;
+    }
+    </script>
+</body>
+</html>
